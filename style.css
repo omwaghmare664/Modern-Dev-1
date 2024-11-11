@@ -6,7 +6,7 @@
 }
 
 @font-face {
-  font-family: 'Poppins';
+  font-family: "Poppins";
   src: url(./fonts/Poppins-Regular.woff);
 }
 
@@ -45,7 +45,7 @@ a {
   border-top: none;
   -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 50%;
   transform: translate(-50%, 0%);
@@ -101,7 +101,7 @@ a {
 }
 
 .hamburger {
-  position: absolute;
+  position: fixed;
   top: 0px;
   left: 25px;
   z-index: 101;
@@ -851,6 +851,7 @@ a {
   color: #fff;
   outline: none;
   background-color: #03030a6b;
+  resize: none;
 }
 
 .contact-container
@@ -901,6 +902,7 @@ a {
   #contact {
     height: 150vh;
   }
+
   .contact-content {
     flex-direction: column-reverse;
     gap: 20px;
@@ -1060,4 +1062,24 @@ footer::before {
   .social-icons a {
     font-size: 1rem;
   }
+}
+.project-tech {
+  gap: 3px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #d4d4d4;
+  font-size: 12px;
+}
+.project-links {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.project-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
 }
