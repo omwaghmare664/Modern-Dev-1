@@ -43,8 +43,8 @@ a {
   border-bottom-right-radius: 15px;
   border: 1px solid #ffffff5b;
   border-top: none;
-  -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
   position: fixed;
   top: 0;
   left: 50%;
@@ -62,6 +62,8 @@ a {
   transform: translate(-50%, -50%);
   border-radius: 50%;
   filter: blur(100px);
+   -webkit-filter: blur(100px);
+  -moz-filter: blur(100px);
   pointer-events: none;
 }
 .navbar .links {
@@ -91,6 +93,8 @@ a {
   background-color: #fff;
   transform: scaleX(0);
   transform-origin: left center;
+    -webkit-transition: transform 0.6s cubic-bezier(0.19, 1, 0.22, 1);
+  -moz-transition: transform 0.6s cubic-bezier(0.19, 1, 0.22, 1);
   transition: transform 0.6s cubic-bezier(0.19, 1, 0.22, 1),
     -webkit-transform 0.6s cubic-bezier(0.19, 1, 0.22, 1);
 }
