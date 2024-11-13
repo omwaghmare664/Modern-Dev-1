@@ -221,11 +221,11 @@ a {
   font-weight: 500;
   color: var(--primary-color);
   border-bottom: 1px solid var(--primary-color);
-  margin-bottom: 10px; /* Adjusted margin */
+  margin-bottom: 5px; /* Adjusted margin */
 }
 .portfolio h1 {
   font-size: 3rem;
-  margin-bottom: 15px; /* Adjusted for balanced spacing */
+  margin-bottom: 10px; /* Adjusted for balanced spacing */
 }
 
 .portfolio h3 {
@@ -233,7 +233,7 @@ a {
   font-weight: 500;
 }
 .portfolio p {
-  margin-top: 15px; /* Adds spacing between elements */
+  margin-top: 10px; /* Adds spacing between elements */
   line-height: 1.5; /* Improves readability */
   max-width: 600px;
   font-weight: 500;
