@@ -221,11 +221,11 @@ a {
   font-weight: 500;
   color: var(--primary-color);
   border-bottom: 1px solid var(--primary-color);
-  margin-bottom: -8px;
+  margin-bottom:-20px;
 }
 .portfolio h1 {
   font-size: 3rem;
-  margin-bottom: -10px; /* Adjusted for balanced spacing */
+  margin-bottom: -30px; /* Adjusted for balanced spacing */
 }
 
 .portfolio h3 {
