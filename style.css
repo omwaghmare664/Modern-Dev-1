@@ -185,16 +185,16 @@ a {
     transform: translate(-50%) rotate(90deg);
   }
 }
-
-/* hero Section Here */
+/* Hero Section */
 #home {
   position: relative;
   width: 100%;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around; /* Adjusts spacing around elements */
   height: 100vh;
   overflow: hidden;
+  padding: 0 50px; /* Adds padding on the sides for spacing */
 }
 #home::before {
   content: "";
@@ -214,18 +214,18 @@ a {
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
-  padding: 40px 90px;
+  padding: 20px 60px; /* Adjusted for better spacing */
 }
 .portfolio h2 {
   font-size: 1.2rem;
   font-weight: 500;
   color: var(--primary-color);
   border-bottom: 1px solid var(--primary-color);
-  margin-bottom: -20px;
+  margin-bottom: 10px; /* Adjusted margin */
 }
 .portfolio h1 {
   font-size: 3rem;
-  margin-bottom: -30px;
+  margin-bottom: 15px; /* Adjusted for balanced spacing */
 }
 
 .portfolio h3 {
@@ -233,8 +233,8 @@ a {
   font-weight: 500;
 }
 .portfolio p {
-  margin-top: 5px;
-  line-height: 1.2;
+  margin-top: 15px; /* Adds spacing between elements */
+  line-height: 1.5; /* Improves readability */
   max-width: 600px;
   font-weight: 500;
 }
@@ -259,6 +259,7 @@ a {
   object-fit: cover;
   cursor: pointer;
   transition: 0.4s ease-in-out;
+  margin: 0 auto; /* Centering if within flex container */
 }
 .portfolio_content img {
   width: 100%;
@@ -308,6 +309,7 @@ a {
     transform: rotate(360deg);
   }
 }
+
 
 /* Responsive Hero Media */
 @media screen and (max-width: 1048px) {
