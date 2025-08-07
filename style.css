@@ -510,8 +510,11 @@ a {
 }
 
 .right_content p {
-  font-size: 18px;
+  font-size: 14px;
   color: #fff;
+  line-height: 1.2;
+  margin-top: 10px;
+  text-spacing-trim: 1;
   margin-bottom: 20px;
   text-align: justify;
 }
@@ -578,11 +581,12 @@ a {
   }
 
   .about-section h3 {
-    font-size: 18px;
+    font-size: 15px;
+    margin-bottom: 10px;
   }
 
   .about-section p {
-    font-size: 14px;
+    font-size: 10px;
   }
 }
 @media screen and (max-width: 480px) {
@@ -592,7 +596,7 @@ a {
   }
 
   .about-section h3 {
-    font-size: 16px;
+    font-size: 12px;
     margin-bottom: 8px;
   }
 
@@ -1098,6 +1102,7 @@ footer::before {
   border-radius: 4px;
   position: relative;
   overflow: hidden;
+  
 }
 .project-link:hover::before {
   content: "";
@@ -1108,7 +1113,9 @@ footer::before {
   top: 0;
   left: 0;
   transform: rotate(15deg) scale(2);
-  animation: glassshine 2s infinite;
+  animation: glassshine 2s cubic-bezier(0.38, 1.31, 0.54, -0.11) infinite;
+  transition: .4s ease-in-out;
+  box-shadow: 0 15px 40px #ffffff47;
 }
 @keyframes glassshine {
   from {
