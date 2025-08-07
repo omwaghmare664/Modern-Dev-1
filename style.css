@@ -62,7 +62,7 @@ a {
   transform: translate(-50%, -50%);
   border-radius: 50%;
   filter: blur(100px);
-   -webkit-filter: blur(100px);
+  -webkit-filter: blur(100px);
   -moz-filter: blur(100px);
   pointer-events: none;
 }
@@ -93,7 +93,7 @@ a {
   background-color: #fff;
   transform: scaleX(0);
   transform-origin: left center;
-    -webkit-transition: transform 0.6s cubic-bezier(0.19, 1, 0.22, 1);
+  -webkit-transition: transform 0.6s cubic-bezier(0.19, 1, 0.22, 1);
   -moz-transition: transform 0.6s cubic-bezier(0.19, 1, 0.22, 1);
   transition: transform 0.6s cubic-bezier(0.19, 1, 0.22, 1),
     -webkit-transform 0.6s cubic-bezier(0.19, 1, 0.22, 1);
@@ -221,7 +221,7 @@ a {
   font-weight: 500;
   color: var(--primary-color);
   border-bottom: 1px solid var(--primary-color);
-  margin-bottom:-20px;
+  margin-bottom: -20px;
 }
 .portfolio h1 {
   font-size: 3rem;
@@ -309,7 +309,6 @@ a {
     transform: rotate(360deg);
   }
 }
-
 
 /* Responsive Hero Media */
 @media screen and (max-width: 1048px) {
@@ -653,7 +652,8 @@ a {
 }
 
 .projects-section p {
-  font-size: 18px;
+  font-size: 11px;
+  margin-bottom: 5px;
   font-weight: 500;
   color: #a0a0a0;
 }
@@ -710,6 +710,8 @@ a {
   flex-direction: column;
   gap: 5px;
 }
+
+
 
 /* Contact Us Section */
 #contact {
@@ -1082,10 +1084,37 @@ footer::before {
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
+  gap: 5px;
+  margin-top: 5px;
 }
 .project-link {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 10px;
+  font-size: 12px;
+  background-color: #ffffff2d;
+  padding: 5px 10px;
+  border-radius: 4px;
+  position: relative;
+  overflow: hidden;
+}
+.project-link:hover::before {
+  content: "";
+  width: 20px;
+  height: 100%;
+  background-color: #ffffff55;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: rotate(15deg) scale(2);
+  animation: glassshine 2s infinite;
+}
+@keyframes glassshine {
+  from {
+    left: -100%;
+  }
+  to {
+    left: 150%;
+  }
 }
