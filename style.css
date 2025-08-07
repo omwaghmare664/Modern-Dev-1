@@ -249,7 +249,7 @@ a {
 .portfolio_content {
   width: 350px;
   height: 350px;
-  background: #0d0d0d;
+  background: #f6f5f5;
   border-radius: 50%;
   border: 2px solid var(--primary-color);
   position: relative;
@@ -264,7 +264,7 @@ a {
 .portfolio_content img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
   border-radius: 50%;
   animation: fadeIn 1.2s ease-in-out;
 }
